@@ -1,0 +1,24 @@
+# Machine Problem 5
+
+import numpy as np
+import matplotlib.pyplot as plt
+n=np.linspace(0,199,200)
+def x(n):
+    d=eval(f)
+    return d
+f=(input('Input the equation of x(n): '))
+for c in range(0,199):
+    if c==0:
+        y=(-1.5*x(n))+(2*x(n+1))-(0.5*x(n+2))
+    elif c>0 & c<=198:
+        y=(0.5*x(n+1))-(0.5*x(n-1))
+    else:
+        y=(1.5*x(n))-(2*x(n-1))+(0.5*x(n-2))
+        
+plt.plot(x(n),label = 'x(n)',color='black')
+plt.grid()
+plt.plot(y,label = 'y(n)',color='yellow')
+plt.title("Graph of x(n) and y(n)")
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.legend()
